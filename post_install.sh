@@ -67,8 +67,8 @@ echo "ZM_DB_PASS=${PASS}" >> /usr/local/etc/zoneminder/zm-freenas.conf
 mysql -u ${USER} -p${PASS} ${DB} < /usr/local/share/zoneminder/db/zm_create.sql
 
 # Create Zoneminder data directories
-su -m www -c 'mkdir /var/db/zoneminder/events'
-su -m www -c 'mkdir /var/db/zoneminder/images'
+su -m www -c 'mkdir -p /var/db/zoneminder/events'
+su -m www -c 'mkdir -p /var/db/zoneminder/images'
 
 # Make the default log directory
 su -m www -c 'mkdir -p /var/log/zm'
