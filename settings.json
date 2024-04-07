@@ -1,5 +1,5 @@
 {
-    "servicerestart":"service nginx restart",
+    "servicerestart": "service nginx restart",
     "serviceget": "/usr/local/bin/pluginget.sh",
     "serviceset": "/usr/local/bin/pluginset.sh",
     "options": {
@@ -33,26 +33,26 @@
             "requirerestart": true,
             "default": "/usr/local/etc/ssl/key.pem"
         },
-	"adminprotocol": {
-	    "type": "combo",
-	    "name": "Admin UI Protocol",
-	    "description": "Protocol for accessing admin UI. Defaults to HTTPS using self-signed certificate or if configured in the other settings.",
-	    "requirerestart": false,
-	    "default": "https",
-	    "options": {
-		"https": "https",
-		"http": "http"
-	    },
-	    "readonly": true
-	},
-	"adminport": {
-	    "type": "int",
-	    "name": "Admin UI Port",
-	    "description": "Default port for accessing admin UI. Defaults to 443 if SSSL configured, or determined from the other settings.",
-	    "requirerestart": false,
-	    "default": "443",
+        "adminprotocol": {
+            "type": "combo",
+            "name": "Admin UI Protocol",
+            "description": "Protocol for accessing admin UI. Defaults to HTTPS using self-signed certificate or if configured in the other settings.",
+            "requirerestart": false,
+            "default": "https",
+            "options": {
+                "https": "https",
+                "http": "http"
+            },
+            "readonly": true
+        },
+        "adminport": {
+            "type": "int",
+            "name": "Admin UI Port",
+            "description": "Default port for accessing admin UI. Defaults to 443 if SSSL configured, or determined from the other settings.",
+            "requirerestart": false,
+            "default": "443",
             "range": "1-65535",
-	    "readonly": true
-	}
+            "readonly": true
+        }
     }
 }
