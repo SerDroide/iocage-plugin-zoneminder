@@ -1,4 +1,8 @@
 {
-    "adminportal": "https://%%IP%%/zm",
-    "docurl": "https://github.com/freenas/iocage-plugin-zoneminder"
+    "adminportal": "%%S%%://%%IP%%%%P%%/zm",
+    "adminportal_placeholders": {
+        "%%S%%": "adminprotocol",
+        "%%P%%": "adminport"
+    },
+    "docurl": "https://github.com/SerDroide/iocage-plugin-zoneminder"
 }

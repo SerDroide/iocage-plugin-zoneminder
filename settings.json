@@ -16,7 +16,7 @@
             "name": "HTTPS Port",
             "description": "Port for incoming https requests, if used. Make sure SSL options have been configured.",
             "range": "1-65535",
-            "default": "443",
+            "default": "8443",
             "requirerestart": true
         },
         "sslcert": {
@@ -50,7 +50,7 @@
             "name": "Admin UI Port",
             "description": "Default port for accessing admin UI. Defaults to 443 if SSSL configured, or determined from the other settings.",
             "requirerestart": false,
-            "default": "443",
+            "default": "8443",
             "range": "1-65535",
             "readonly": true
         }
